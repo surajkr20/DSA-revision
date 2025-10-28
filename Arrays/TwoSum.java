@@ -14,7 +14,7 @@ public class TwoSum {
         return new int[] { -1, -1 };
     }
 
-    // better apporach - using Hashmap
+    // optimal apporach - using Hashmap
     public static int[] approach02(int[] nums, int target) {
         int n = nums.length;
         HashMap<Integer, Integer> map = new HashMap<>();
