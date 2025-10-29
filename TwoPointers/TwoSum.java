@@ -1,3 +1,4 @@
+package TwoPointers;
 import java.util.Arrays;
 import java.util.HashMap;
 
@@ -12,6 +13,19 @@ public class TwoSum {
             }
         }
         return new int[] { -1, -1 };
+    }
+
+    // two pointer + sorting approach >> o(n * logn)
+    static boolean approach03(int[] nums, int target){
+        Arrays.sort(nums);
+        int i = 0;
+        int j = nums.length-1;
+        while( i < j ){
+            if(nums[i] + nums[j] == target) return true;
+            else if(nums[i] + nums[j] < target) i++;
+            else j--;
+        }
+        return false;
     }
 
     // optimal apporach - using Hashmap
