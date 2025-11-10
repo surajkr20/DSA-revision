@@ -1,19 +1,9 @@
+
+// if any number divisible by 400 thant it's leap year
+// if any year divisible by 4 and it's not divisible by 400 that it also leap year
+// if any year divible by 100 and it's not divible by 400 than it's not leap year
+
 public class LeapYear {
-
-    static int sumOfN(int n){
-        int sum = 0;
-        for(int i=0; i<n; i++){
-            sum = sum + i;
-        }
-        return sum;
-    }
-
-    static void table(int n){
-        for(int i=n; i<=n*10; i=i+n){
-            System.out.print(i);
-        }
-    }
-
     public static void main(String[] args) {
         int year = 2300;
 

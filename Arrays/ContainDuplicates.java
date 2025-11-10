@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,6 +12,15 @@ public class ContainDuplicates {
             for(int j=i+1; j<n; j++){
                 if(nums[i] == nums[j]) return true;
             }
+        }
+        return false;
+    }
+
+    // better apporach - o(n * log n)
+    static boolean containsDuplicate03(int[] nums){
+        Arrays.sort(nums);
+        for(int i=0; i<nums.length-1; i++){
+            if(nums[i] == nums[i+1]) return true;
         }
         return false;
     }
