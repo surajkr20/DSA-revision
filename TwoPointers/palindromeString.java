@@ -1,4 +1,3 @@
-package TwoPointers;
 
 public class palindromeString {
     // using two pointers approach
